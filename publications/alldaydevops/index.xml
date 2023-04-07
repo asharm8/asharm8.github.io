@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual on Abhi Sharma</title>
+    <link>https://asharm8.github.io/publications/alldaydevops/</link>
+    <description>Recent content in Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual on Abhi Sharma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://asharm8.github.io/publications/alldaydevops/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
