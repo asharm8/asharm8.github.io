@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -28,14 +28,17 @@
 
 
 
-<meta property="og:title" content="Creations" />
-<meta property="og:description" content="Not applicable" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://asharm8.github.io/projects/creations/" /><meta property="og:site_name" content="Abhi Sharma" />
+<meta property="og:url" content="http://localhost:1313/projects/creations/">
+  <meta property="og:site_name" content="Abhi Sharma">
+  <meta property="og:title" content="Creations">
+  <meta property="og:description" content="Not applicable">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Creations"/>
-<meta name="twitter:description" content="Not applicable"/>
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Creations">
+  <meta name="twitter:description" content="Not applicable">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -189,13 +192,6 @@ Creations | Abhi Sharma
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
@@ -207,13 +203,6 @@ Creations | Abhi Sharma
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#achievements"
-                            aria-label="achievements">
-                            Achievements
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
@@ -224,26 +213,6 @@ Creations | Abhi Sharma
                     </li>
                     
 
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/blogs" title="Blog posts">
-                            
-                            Blog
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/gallery" title="Blog posts">
-                            
-                            Gallery
-                        </a>
-                    </li>
                     
                     
 
@@ -293,7 +262,7 @@ Creations | Abhi Sharma
                     </div>
                     <h5 class="card-title bg-transparent">BOSH release for Bamboo &amp; Remote Agents</h5>
                     <div class="card-text bg-transparent secondary-font">
-                        BOSH (Bosh Outer SHell) &ldquo;&hellip; is an open source tool for release engineering, deployment, …
+                        <p>BOSH (Bosh Outer SHell) &ldquo;&hellip;<em> is an open source tool for release engineering, deployment, …</em></p>
                     </div>
                 </div>
                 <div class="card-footer py-3">
@@ -318,7 +287,7 @@ Creations | Abhi Sharma
                     </div>
                     <h5 class="card-title bg-transparent">Atlassian Marketplace Plugins</h5>
                     <div class="card-text bg-transparent secondary-font">
-                        Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core …
+                        <p>Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core …</p>
                     </div>
                 </div>
                 <div class="card-footer py-3">
@@ -343,7 +312,7 @@ Creations | Abhi Sharma
                     </div>
                     <h5 class="card-title bg-transparent">Docker image for Bitbucket CI/CD Pipelines …</h5>
                     <div class="card-text bg-transparent secondary-font">
-                        Provides required dependencies and additional utilities to simplify and codify the process of …
+                        <p>Provides required dependencies and additional utilities to simplify and codify the process of …</p>
                     </div>
                 </div>
                 <div class="card-footer py-3">
@@ -476,12 +445,12 @@ Creations | Abhi Sharma
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="https://asharm8.github.io/" title="Abhi Sharma">
+                <a href="http://localhost:1313/" title="Abhi Sharma">
                     <img alt="Footer logo" src="img/AbhiSharma.png"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2023  All rights reserved
+            &copy; 2026  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -497,15 +466,13 @@ Creations | Abhi Sharma
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
     }
-
 </script>
+
+
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {

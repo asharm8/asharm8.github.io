@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -28,18 +28,27 @@
 
 
 
-<meta property="og:title" content="Forcing Visits to use SSL" />
-<meta property="og:description" content="Intro Doesn&rsquo;t matter whether it&rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
-First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &lsquo;man in the middle&quot; attack." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://asharm8.github.io/blog/force-ssl/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2009-01-01T14:09:10+00:00" />
-<meta property="article:modified_time" content="2009-01-01T14:09:10+00:00" /><meta property="og:site_name" content="Abhi Sharma" />
+<meta property="og:url" content="http://localhost:1313/blog/force-ssl/">
+  <meta property="og:site_name" content="Abhi Sharma">
+  <meta property="og:title" content="Forcing Visits to use SSL">
+  <meta property="og:description" content="Intro Doesn’t matter whether it’s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
+First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty ‘man in the middle&#34; attack. Finally it gives your site that touch of class…. which of course a classy person like yourself relies on. Once you implement SSL certificates on your server you’ll want to require secure connections using Apache’s rewrite module. Now I won’t dwell on the creation and signing of certificates, its already well documented. If your just starting out though,heres a few links I recommend;">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2009-01-01T14:09:10+00:00">
+    <meta property="article:modified_time" content="2009-01-01T14:09:10+00:00">
+    <meta property="article:tag" content="Apache">
+    <meta property="article:tag" content="Redirect">
+    <meta property="article:tag" content="Rewrite">
+    <meta property="article:tag" content="Ssl">
+    <meta property="article:tag" content="Web Development">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Forcing Visits to use SSL"/>
-<meta name="twitter:description" content="Intro Doesn&rsquo;t matter whether it&rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
-First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &lsquo;man in the middle&quot; attack."/>
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Forcing Visits to use SSL">
+  <meta name="twitter:description" content="Intro Doesn’t matter whether it’s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
+First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty ‘man in the middle&#34; attack. Finally it gives your site that touch of class…. which of course a classy person like yourself relies on. Once you implement SSL certificates on your server you’ll want to require secure connections using Apache’s rewrite module. Now I won’t dwell on the creation and signing of certificates, its already well documented. If your just starting out though,heres a few links I recommend;">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -193,13 +202,6 @@ Forcing Visits to use SSL | Abhi Sharma
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
@@ -211,13 +213,6 @@ Forcing Visits to use SSL | Abhi Sharma
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#achievements"
-                            aria-label="achievements">
-                            Achievements
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
@@ -228,26 +223,6 @@ Forcing Visits to use SSL | Abhi Sharma
                     </li>
                     
 
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/blogs" title="Blog posts">
-                            
-                            Blog
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/gallery" title="Blog posts">
-                            
-                            Gallery
-                        </a>
-                    </li>
                     
                     
 
@@ -366,17 +341,17 @@ RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
             <h5>Tags</h5>
             <ul class="tags-ul list-unstyled list-inline">
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/apache" target="_blank">apache</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/apache" target="_blank">apache</a></li>
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/apache" target="_blank">apache</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/apache" target="_blank">apache</a></li>
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/redirect" target="_blank">redirect</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/redirect" target="_blank">redirect</a></li>
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/rewrite" target="_blank">rewrite</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/rewrite" target="_blank">rewrite</a></li>
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/ssl" target="_blank">ssl</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/ssl" target="_blank">ssl</a></li>
               
-              <li class="list-inline-item"><a href="https://asharm8.github.io/tags/web-development" target="_blank">web development</a></li>
+              <li class="list-inline-item"><a href="http://localhost:1313/tags/web-development" target="_blank">web development</a></li>
               
             </ul>
           </aside>
@@ -388,17 +363,17 @@ RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Forcing%20Visits%20to%20use%20SSL&url=https%3a%2f%2fasharm8.github.io%2fblog%2fforce-ssl%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Forcing%20Visits%20to%20use%20SSL&url=http%3a%2f%2flocalhost%3a1313%2fblog%2fforce-ssl%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Forcing%20Visits%20to%20use%20SSL: https%3a%2f%2fasharm8.github.io%2fblog%2fforce-ssl%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Forcing%20Visits%20to%20use%20SSL: http%3a%2f%2flocalhost%3a1313%2fblog%2fforce-ssl%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Forcing%20Visits%20to%20use%20SSL&amp;body=Check%20out%20this%20site https%3a%2f%2fasharm8.github.io%2fblog%2fforce-ssl%2f'>
+                  <a target="_blank" href='mailto:?subject=Forcing%20Visits%20to%20use%20SSL&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fblog%2fforce-ssl%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -561,12 +536,12 @@ RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
-                <a href="https://asharm8.github.io/" title="Abhi Sharma">
+                <a href="http://localhost:1313/" title="Abhi Sharma">
                     <img alt="Footer logo" src="img/AbhiSharma.png"
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2023  All rights reserved
+            &copy; 2026  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -582,15 +557,13 @@ RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
     }
-
 </script>
+
+
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {
